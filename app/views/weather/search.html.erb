@@ -1,0 +1,8 @@
+<%= turbo_frame_tag "weather_search" do %>
+	
+	<% if @address.blank? %>
+		<p> No address provided</p>	
+	<% else %>
+		<p> <%= @address %> </p>
+	<% end %>
+<% end %>
